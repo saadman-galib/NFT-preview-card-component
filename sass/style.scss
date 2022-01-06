@@ -43,7 +43,6 @@ body {
         padding: 26px;
         border-radius: 16px;
         box-shadow: 0 34px 1px 16px #0c1729, 0 30px 1px 55px #0c192c;
-        
 
         .card-img-container {
             width: 304px;
@@ -58,9 +57,6 @@ body {
                 height: auto;
 
                 border-radius: 8px;
-                // position: absolute;
-                // top: 0;
-                // left: 0;
 
                 img {
                     width: 100%;
@@ -172,14 +168,11 @@ body {
                 margin-bottom: 20px;
             }
 
-            
-
             .user-container {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 cursor: pointer;
-                
 
                 img {
                     width: 37px;
@@ -203,7 +196,6 @@ body {
                 span {
                     color: $soft-blue;
                 }
-                
             }
 
             .user-container:hover > .user-img {
