@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: #0d192b;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 354px;
+  height: auto;
+  background-color: #14253d;
+  padding: 26px;
+  border-radius: 16px;
+  box-shadow: 0 34px 1px 16px #0c1729, 0 30px 1px 55px #0c192c;
+}
+
+.main-container .card .card-img-container {
+  width: 304px;
+  height: 304px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.main-container .card .card-img-container .card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.main-container .card .card-img-container .card-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.main-container .card .card-img-container .card-img-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 255, 247, 0.548);
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 8px;
+}
+
+.main-container .card .card-img-container:hover .card-img-icon {
+  opacity: 1;
+}
+
+.main-container .card .card-text-container .card-heading {
+  margin-bottom: 12px;
+}
+
+.main-container .card .card-text-container .card-heading h2 {
+  color: white;
+  font-size: 22px;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.main-container .card .card-text-container .card-heading h2:hover {
+  color: #00fff7;
+}
+
+.main-container .card .card-text-container .card-paragraph p {
+  color: #8bacda;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+}
+
+.main-container .card .card-text-container .card-price-row,
+.main-container .card .card-text-container .price-left-part,
+.main-container .card .card-text-container .price-right-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.main-container .card .card-text-container .card-price-row {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.main-container .card .card-text-container .card-price-row .price-left-part p,
+.main-container .card .card-text-container .card-price-row .price-right-part p {
+  margin-left: 8px;
+  letter-spacing: 0.5px;
+}
+
+.main-container .card .card-text-container .card-price-row .price-left-part {
+  font-weight: bolder;
+}
+
+.main-container .card .card-text-container .card-price-row .price-left-part img {
+  width: auto;
+  height: auto;
+}
+
+.main-container .card .card-text-container .card-price-row .price-left-part p {
+  color: #00fff7;
+}
+
+.main-container .card .card-text-container .card-price-row .price-right-part {
+  margin-left: auto;
+}
+
+.main-container .card .card-text-container .card-price-row .price-right-part p {
+  color: #8bacda;
+}
+
+.main-container .card .card-text-container .card-price-row .price-right-part img {
+  width: 17px;
+  height: 17px;
+  margin: auto;
+}
+
+.main-container .card .card-text-container .divider {
+  height: 1px;
+  width: 100%;
+  background-color: #8bacda;
+  margin-bottom: 20px;
+}
+
+.main-container .card .card-text-container .user-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.main-container .card .card-text-container .user-container img {
+  width: 37px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: 0.5s;
+}
+
+.main-container .card .card-text-container .user-container p {
+  margin-left: 12px;
+  color: white;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.main-container .card .card-text-container .user-container p:hover {
+  color: #00fff7;
+}
+
+.main-container .card .card-text-container .user-container span {
+  color: #8bacda;
+}
+
+.main-container .card .card-text-container .user-container:hover > .user-img {
+  border: 2px solid white;
+  border-radius: 50%;
+}
